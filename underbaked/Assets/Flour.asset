@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Flour
   m_EditorClassIdentifier: 
   ItemName: Flour
-  obj: {fileID: 0}
+  obj: {fileID: 1594879466734162, guid: c82411508e9628b4e9f629bf2800542f, type: 2}
   Points: 25
