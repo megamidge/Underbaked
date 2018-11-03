@@ -24,50 +24,53 @@
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] SystemI::createSound                     : filename = Z:\Users\chunwinglee\Documents\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 0000000044960198 : node = 000000001703BD90
-[LOG] SystemI::createSound                     : add node to async list : head = 0000000044AF7A98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000044960198
-[LOG] SystemI::createSoundInternal             :     Create name='Z:\Users\chunwinglee\Documents\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] SystemI::createSound                     : setdata soundi = 0000000045315248 : node = 000000001178E060
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000044AF7758.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045315248
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000001703BEA8
+[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000001178E178
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     filename = Z:\Users\chunwinglee\Documents\Doot\Build\Desktop/Environment.bank : mode 02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000449604F8 : node = 0000000044AD3100
-[LOG] SystemI::createSound                     :     add node to async list : head = 0000000044AF7A98.  list count = 0
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000453153F8 : node = 0000000013714260
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000044AF7758.  list count = 0
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='chatter_loop', format=2, channels=2, frequency=48000, lengthbytes=659808, lengthpcm=2484226, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.528172.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000044960198
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000449604F8
-[LOG] SystemI::createSoundInternal             :     Create name='Z:\Users\chunwinglee\Documents\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045315248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000453153F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000044AD3218
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000013714378
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_loop', format=2, channels=2, frequency=48000, lengthbytes=199200, lengthpcm=768265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.108278.
-[LOG] SoundI::getSubSound                      :     sound 0000000044960198.  Subsound index 0 / 1
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000449604F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004495FAD8
-[LOG] SoundI::getSubSound                      :     sound 00000000449604F8.  Subsound index 0 / 1
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004495FAD8
-[LOG] SoundI::release                          : ambience_loop (00000000449604F8)
-[LOG] SoundI::release                          :     ambience_loop (0000000044AF7128)
-[LOG] SoundI::release                          :     ambience_loop (000000004495FE38)
-[LOG] SoundI::release                          : chatter_loop (0000000044960198)
-[LOG] SoundI::release                          :     chatter_loop (0000000044AF8648)
-[LOG] SoundI::release                          :     chatter_loop (000000004495FAD8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000453153F8
+[LOG] SoundI::getSubSound                      : sound 0000000045315248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045314678
+[LOG] SoundI::getSubSound                      : sound 00000000453153F8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045314678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045315FC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045315FC8
+[LOG] SoundI::release                          : ambience_loop (00000000453153F8)
+[LOG] SoundI::release                          :     ambience_loop (0000000044AF8308)
+[LOG] SoundI::release                          :     ambience_loop (0000000045315FC8)
+[LOG] SoundI::release                          : chatter_loop (0000000045315248)
+[LOG] SoundI::release                          :     chatter_loop (0000000044AF8B28)
+[LOG] SoundI::release                          :     chatter_loop (0000000045314678)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
