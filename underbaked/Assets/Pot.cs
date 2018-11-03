@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingredient
+public class __Ingredient
 {
     string ItemName;
     int Points;
 
-    Ingredient(string pItemName, int pPoints)
+    __Ingredient(string pItemName, int pPoints)
     {
         ItemName = pItemName;
         Points = pPoints;
