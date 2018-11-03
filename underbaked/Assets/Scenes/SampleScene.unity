@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd9470adeb040e47a47f8509ff79873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: {fileID: 0}
+  food: {fileID: 11400000, guid: 9e7f51117dc811e41b4becae11d22296, type: 2}
 --- !u!4 &1523249893
 Transform:
   m_ObjectHideFlags: 0

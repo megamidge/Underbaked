@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Food_Sack
   m_EditorClassIdentifier: Assembly-CSharp::FoodObject
-  Name: 
+  Name: Flour
   Ingredients: []
-  Mesh: {fileID: 0}
+  Mesh: {fileID: 1947216925010022, guid: 7482e26d21c702344ac7795f06772f1c, type: 2}
