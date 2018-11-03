@@ -23,7 +23,8 @@ public class Spawner : MonoBehaviour {
         {
             nextSpawnTime = Time.time + secondsBetweenSpawns;
 
-            Vector3 spawnPosition = new Vector3(Random.Range(-4, 3), 10, Random.Range(-2.4f, 2.4f));
+            //Vector3 spawnPosition = new Vector3(Random.Range(-4, 3), 10, Random.Range(-2.4f, 2.4f));
+            Vector3 spawnPosition = new Vector3(Random.Range(-2.4f, 2.4f), 10, Random.Range(-3, 3));
             Instantiate(fallingBlockPrefab, spawnPosition, Quaternion.identity);
         }
 	}
