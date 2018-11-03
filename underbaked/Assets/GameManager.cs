@@ -25,6 +25,14 @@ public enum GameStates{
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (gameState == GameStates.inRound)
+        {
+            DoOrders();
+        }
 	}
+
+    void DoOrders()
+    {
+
+    }
 }

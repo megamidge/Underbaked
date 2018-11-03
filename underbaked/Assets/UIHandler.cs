@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIHandler : MonoBehaviour {
 
     public GameManager gameManager;
+    public Canvas mainMenu;
     //public Text pointsText;
 	// Use this for initialization
 	void Start () {
@@ -14,6 +15,12 @@ public class UIHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //pointsText.text = Time.time.ToString(); 
+        mainMenu.gameObject.SetActive(gameManager.GameState == GameManager.GameStates.menu);
 	}
+
+
+    public void PlayButtonClick()
+    {
+        gameManager.GameState = GameManager.GameStates.inRound;
+    }
 }
