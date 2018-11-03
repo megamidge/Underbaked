@@ -23,11 +23,10 @@ GameObject:
   - component: {fileID: 23017400571656406}
   - component: {fileID: 65360176607777464}
   - component: {fileID: 114837425435680150}
-  - component: {fileID: 114982774069486388}
   - component: {fileID: 54545355861036054}
   m_Layer: 0
   m_Name: Falling Block
-  m_TagString: Untagged
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,17 +122,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a78d23db61df7274bacdb311db4bcf7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114982774069486388
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918353031098878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b55570f3f922944826666fb8fdd387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   splat: {fileID: 1459077270096130, guid: c796a5a16a055784d822eaba7deea0d7, type: 2}
