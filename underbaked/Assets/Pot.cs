@@ -2,21 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class __Ingredient
-{
-    string ItemName;
-    int Points;
-
-    __Ingredient(string pItemName, int pPoints)
-    {
-        ItemName = pItemName;
-        Points = pPoints;
-    }
-}
-
 public class Pot : MonoBehaviour {
 
-    public List<GameObject> ingredients = new List<GameObject>();
+    public List<Ingredient> ingredients = new List<Ingredient>();
 
     public GameManager gm;
 
@@ -35,8 +23,9 @@ public class Pot : MonoBehaviour {
         if (other.tag == "Ingredient")
         {
             gm.Points += 1;
-            ingredients.Add(other.gameObject);
+            //ingredients.Add(other.gameObject.GetComponent<FallingBlock>().ingredient);
             Destroy(other.gameObject);
+            Debug.Log(ingredients.Count + " " + ingredients[ingredients.Count - 1].ItemName);
         }
     }
 }

@@ -9,12 +9,8 @@ public class Spawner : MonoBehaviour {
     public float secondsBetweenSpawns = 1f;
     float nextSpawnTime = 0f;
  
-    Vector3 screenHalfSizeWorldUnits;
-
 	// Use this for initialization
-	void Start () {
-        screenHalfSizeWorldUnits = new Vector3(Camera.main.aspect * Camera.main.orthographicSize, Camera.main.orthographicSize);
-    
+	void Start () {    
 	}
 	
 	// Update is called once per frame
@@ -23,9 +19,10 @@ public class Spawner : MonoBehaviour {
         {
             nextSpawnTime = Time.time + secondsBetweenSpawns;
 
-            //Vector3 spawnPosition = new Vector3(Random.Range(-4, 3), 10, Random.Range(-2.4f, 2.4f));
-            Vector3 spawnPosition = new Vector3(Random.Range(-2.4f, 2.4f), 10, Random.Range(-3, 3));
-            Instantiate(fallingBlockPrefab, spawnPosition, Quaternion.identity);
+            Vector3 spawnPosition = new Vector3(Random.Range(-4, 3), 10, Random.Range(-2.4f, 2.4f));
+            GameObject Falling = Instantiate(fallingBlockPrefab, spawnPosition, Quaternion.identity);
+
+            //Falling.GetComponent<FallingBlock>().ingredient = new Ingredient("Flour", 100);
         }
 	}
 }

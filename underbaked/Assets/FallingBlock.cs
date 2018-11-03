@@ -6,6 +6,12 @@ public class FallingBlock : MonoBehaviour {
 
     float speed = 5;
     public GameObject splat;
+    public Ingredient ingredient;
+
+    private void Start()
+    {
+        
+    }
 
     void Update () {
         transform.Translate(Vector3.down * speed * Time.deltaTime);
