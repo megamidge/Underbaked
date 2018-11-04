@@ -28,49 +28,49 @@
 [LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 0000000045315248 : node = 000000001178E060
-[LOG] SystemI::createSound                     : add node to async list : head = 0000000044AF7758.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045315248
+[LOG] SystemI::createSound                     : setdata soundi = 00000000453149D8 : node = 0000000013713150
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000044AF7278.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000453149D8
+[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000453155A8 : node = 0000000013714E30
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000001178E178
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000013713268
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000044AF7278.  list count = 0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000453153F8 : node = 0000000013714260
-[LOG] SystemI::createSound                     :     add node to async list : head = 0000000044AF7758.  list count = 0
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='chatter_loop', format=2, channels=2, frequency=48000, lengthbytes=659808, lengthpcm=2484226, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.528172.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045315248
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000453153F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000453149D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000453155A8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000013714378
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000013714F48
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_loop', format=2, channels=2, frequency=48000, lengthbytes=199200, lengthpcm=768265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.108278.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000453153F8
-[LOG] SoundI::getSubSound                      : sound 0000000045315248.  Subsound index 0 / 1
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045314678
-[LOG] SoundI::getSubSound                      : sound 00000000453153F8.  Subsound index 0 / 1
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045314678
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045315FC8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045315FC8
-[LOG] SoundI::release                          : ambience_loop (00000000453153F8)
-[LOG] SoundI::release                          :     ambience_loop (0000000044AF8308)
-[LOG] SoundI::release                          :     ambience_loop (0000000045315FC8)
-[LOG] SoundI::release                          : chatter_loop (0000000045315248)
-[LOG] SoundI::release                          :     chatter_loop (0000000044AF8B28)
-[LOG] SoundI::release                          :     chatter_loop (0000000045314678)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000453155A8
+[LOG] SoundI::getSubSound                      : sound 00000000453149D8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045314B88
+[LOG] SoundI::getSubSound                      :     sound 00000000453155A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045314B88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000045315AB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000045315AB8
+[LOG] SoundI::release                          : ambience_loop (00000000453155A8)
+[LOG] SoundI::release                          :     ambience_loop (0000000044AF7C88)
+[LOG] SoundI::release                          :     ambience_loop (0000000045315AB8)
+[LOG] SoundI::release                          : chatter_loop (00000000453149D8)
+[LOG] SoundI::release                          :     chatter_loop (0000000044AF8CC8)
+[LOG] SoundI::release                          :     chatter_loop (0000000045314B88)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
