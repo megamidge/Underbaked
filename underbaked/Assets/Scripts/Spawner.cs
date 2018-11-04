@@ -30,6 +30,9 @@ public class Spawner : MonoBehaviour {
             go.AddComponent<Rigidbody>();
             go.AddComponent<BoxCollider>();
 
+            go.GetComponent<Rigidbody>().mass = .1f;
+            go.GetComponent<Rigidbody>().drag = 5f;
+
             GameObject Falling = Instantiate(go, new Vector3(spawnPosition.x, 30f, spawnPosition.z), Quaternion.identity);
 
             //Falling.GetComponent<FallingBlock>().ingredient = new Ingredient("Flour", 100);
