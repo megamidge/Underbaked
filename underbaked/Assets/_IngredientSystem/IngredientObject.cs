@@ -5,7 +5,7 @@ using UnityEngine;
 public class IngredientObject : MonoBehaviour {
 
     public Ingredient ingredient;
-    private GameObject go;
+    public GameObject go;
 
 	void Start () {
         go = Instantiate(ingredient.obj);

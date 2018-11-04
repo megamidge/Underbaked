@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class Pot : MonoBehaviour {
@@ -25,9 +27,14 @@ public class Pot : MonoBehaviour {
             gm.Points += 1;
             //ingredients.Add(other.gameObject.GetComponent<FallingBlock>().ingredient);
             //ingredients.Add(other.gameObject.GetComponent<FallingBlock>().ingredient);
-            ingredient = other.gameObject.GetComponent<IngredientObject>();
-            Destroy(other.gameObject);
+            ingredient = (other.gameObject.GetComponent<IngredientObject>());
+            //ingredient.transform.SetParent(this.gameObject.transform);
+            Instantiate(ingredient).transform.SetParent(this.gameObject.transform);
+            Debug.Log("Ingredient:" + ingredient.ingredient.name);
+            //other.gameObject.SetActive(false);
+            //Destroy(other.gameObject);
             //Debug.Log(ingredients.Count + " " + ingredients[ingredients.Count - 1]);
         }
     }
+
 }

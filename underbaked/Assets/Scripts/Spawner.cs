@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour {
             go.AddComponent<FallingBlock>();
             go.AddComponent<Rigidbody>();
             go.AddComponent<BoxCollider>();
-
+            go.tag = "Ingredient";
             GameObject Falling = Instantiate(go, new Vector3(spawnPosition.x, 30f, spawnPosition.z), Quaternion.identity);
 
             //Falling.GetComponent<FallingBlock>().ingredient = new Ingredient("Flour", 100);
