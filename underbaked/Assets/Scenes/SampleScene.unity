@@ -39,11 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.43765137, g: 0.48551667, b: 0.5657944, a: 1}
-<<<<<<< HEAD
-  m_IndirectSpecularColor: {r: 0.43765137, g: 0.48551667, b: 0.5657944, a: 1}
-=======
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
->>>>>>> FoodSystem
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -785,11 +780,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 12
-=======
   m_RootOrder: 13
->>>>>>> FoodSystem
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492924732
 GameObject:
@@ -947,11 +938,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 500778635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
   m_Script: {fileID: 11500000, guid: a232166956855cb4580a0b6097e1e57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -960,7 +946,6 @@ MonoBehaviour:
   secondsBetweenSpawns: 1
   ingredients:
   - {fileID: 11400000, guid: 5d0a5db70f853724db6af7d7c0e09f89, type: 2}
->>>>>>> FoodSystem
 --- !u!4 &500778637
 Transform:
   m_ObjectHideFlags: 0
@@ -1265,11 +1250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 10
-=======
   m_RootOrder: 11
->>>>>>> FoodSystem
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &724477840
 Mesh:
@@ -1971,11 +1952,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 11
-=======
   m_RootOrder: 12
->>>>>>> FoodSystem
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1263348659
 GameObject:
@@ -2021,10 +1998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients: []
-<<<<<<< HEAD
-=======
   ingredient: {fileID: 0}
->>>>>>> FoodSystem
   gm: {fileID: 0}
 --- !u!136 &1263348662
 CapsuleCollider:
@@ -2244,83 +2218,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1382585439}
   m_Mesh: {fileID: 0}
-<<<<<<< HEAD
---- !u!1 &1288925958
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1288925959}
-  - component: {fileID: 1288925962}
-  - component: {fileID: 1288925961}
-  - component: {fileID: 1288925960}
-  m_Layer: 0
-  m_Name: Audio_zone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1288925959
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1288925958}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.29, y: 6.04, z: -1.86}
-  m_LocalScale: {x: 15.518, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 512778132}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1288925960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1288925958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: event:/chatter
-  PlayEvent: 1
-  StopEvent: 2
-  CollisionTag: 
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!135 &1288925961
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1288925958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1288925962
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1288925958}
-  m_Mesh: {fileID: 0}
---- !u!1 &1551119854
-=======
 --- !u!1 &1330559331 stripped
->>>>>>> FoodSystem
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0bf1750295a15cf49af7f636b51b4258,
     type: 3}
