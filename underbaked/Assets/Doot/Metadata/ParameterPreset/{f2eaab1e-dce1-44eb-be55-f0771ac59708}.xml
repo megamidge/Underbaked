@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{f2eaab1e-dce1-44eb-be55-f0771ac59708}">
+        <property name="name">
+            <value>Distance</value>
+        </property>
+        <relationship name="folder">
+            <destination>{68e41abe-6499-4838-a80f-6438680dfd80}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{f2b3112e-d531-4f26-9d71-1f48c088e50d}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{f2b3112e-d531-4f26-9d71-1f48c088e50d}">
+        <property name="parameterType">
+            <value>1</value>
+        </property>
+        <property name="maximum">
+            <value>20</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>
