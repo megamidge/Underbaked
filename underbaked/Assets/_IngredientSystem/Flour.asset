@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fd7ef5948979645aa0788a9c65aecf, type: 3}
   m_Name: Flour
   m_EditorClassIdentifier: 
-  ItemName: Flour
-  obj: {fileID: 1594879466734162, guid: c82411508e9628b4e9f629bf2800542f, type: 2}
-  Points: 25
+  ItemName: 
+  obj: {fileID: 0}
+  Points: 0
