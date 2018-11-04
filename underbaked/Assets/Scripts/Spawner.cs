@@ -31,6 +31,8 @@ public class Spawner : MonoBehaviour {
             go.AddComponent<BoxCollider>();
             go.tag = "Ingredient";
 
+            
+
             go.GetComponent<Rigidbody>().mass = .1f;
             go.GetComponent<Rigidbody>().drag = 5f;
 
@@ -38,5 +40,6 @@ public class Spawner : MonoBehaviour {
 
             //Falling.GetComponent<FallingBlock>().ingredient = new Ingredient("Flour", 100);
         }
+        
 	}
 }

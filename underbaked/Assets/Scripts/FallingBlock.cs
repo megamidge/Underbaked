@@ -8,9 +8,11 @@ public class FallingBlock : MonoBehaviour {
     public GameObject splat;
     public IngredientObject ingredient;
 
+
+  
     private void Start()
     {
-        
+       
     }
 
     void Update () {
@@ -23,5 +25,9 @@ public class FallingBlock : MonoBehaviour {
         //Destroy(this.gameObject);
         if (collision.gameObject.tag != "Player")
             this.gameObject.SetActive(false);
+
+
+        
+     
     }
 }

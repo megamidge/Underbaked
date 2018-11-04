@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000001628D508 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000004C192D68 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -18,7 +18,422 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Profile::init                            : Profiler listening on port: 9264
-[ERR] RuntimeBankModel::openFile               : Failed to open file 'Assets\Doot\Build\Desktop/.strings.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Music.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000000004C2F33C8 : node = 000000004C38EF80
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EAEA8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C2F33C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Music.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 774208
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1888
+[LOG] SystemI::createSound                     :     filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C38F098
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004C2642D8 : node = 000000004BE91250
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004C0EAEA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004C264488 : node = 000000004BE914F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004C0EAEA8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='theme_music', format=2, channels=2, frequency=48000, lengthbytes=773440, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C2F33C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C2642D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004BE91368
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='chatter_loop', format=2, channels=2, frequency=48000, lengthbytes=659808, lengthpcm=2484226, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.528172.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C2642D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C264488
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004BE91608
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_loop', format=2, channels=2, frequency=48000, lengthbytes=199200, lengthpcm=768265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.108278.
+[LOG] SoundI::getSubSound                      :     sound 000000004C2F33C8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000004C2642D8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C264488
+[LOG] SoundI::getSubSound                      : sound 000000004C264488.  Subsound index 0 / 1
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Priority: 0, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Priority: 0, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 000000004C949908
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 000000004C949908
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 000000004C949908 connected, entering connected state
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_0.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_0.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_1.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_1.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_2.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_2.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_3.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_3.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_4.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_4.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_5.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_5.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_6.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_6.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_7.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_7.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_8.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_8.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_9.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_9.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_10.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_10.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_11.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_11.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_12.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_12.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_13.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_13.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_14.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_14.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_15.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_15.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_16.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_16.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_17.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_17.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_18.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_18.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_19.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_19.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_20.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_20.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_21.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_21.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_22.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_22.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_23.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_23.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_24.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_24.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_25.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_25.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_26.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_26.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_27.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_27.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_28.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_28.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_29.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_29.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_30.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_30.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_31.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_31.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_32.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_32.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_33.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_33.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_34.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_34.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_35.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_35.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_36.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_36.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_37.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_37.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_38.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_38.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_39.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_39.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_40.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_40.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_41.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_41.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_42.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_42.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_43.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_43.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_44.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_44.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_45.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_45.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_46.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_46.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_47.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_47.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_48.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_48.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_49.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_49.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_50.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_50.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_51.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_51.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_52.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_52.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_53.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_53.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_54.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_54.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_55.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_55.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_56.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_56.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_57.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_57.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_58.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_58.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_59.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_59.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_60.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_60.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_61.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_61.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_62.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_62.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_63.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_63.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_64.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_64.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_65.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_65.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_66.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_66.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_67.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_67.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_68.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_68.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_69.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_69.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_70.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_70.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_71.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_71.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_72.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_72.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_73.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_73.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_74.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_74.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSound                     : filename = fmod:///remote/Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav : mode 0201c082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000003BA97F08 : node = 000000004C3638A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EAEA8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BA97F08
+[LOG] SystemI::createSoundInternal             :     Create name='fmod:///remote/Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav', mode=0x0201C082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              :     Attemping to open remote file 'Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav'
+[LOG] SystemI::createSoundInternal             :     Stream: name='(null)', format=3, channels=2, frequency=48000, lengthbytes=13824000, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BA97F08
+[LOG] SoundI::release                          : theme_music (000000004C2F33C8)
+[LOG] SoundI::release                          :     theme_music (000000004C0EBA58)
+[LOG] SoundI::release                          :     theme_music (000000004C2F3728)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_75.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_75.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_76.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_76.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_77.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_77.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_78.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_78.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_79.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_79.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_80.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_80.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_81.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_81.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_82.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_82.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_83.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_83.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_84.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_84.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_85.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_85.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_86.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_86.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_87.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_87.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_88.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_88.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_89.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_89.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_90.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_90.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_91.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_91.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_92.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_92.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_93.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_93.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_94.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/chunwinglee/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-ni6Cmu/hotswap_94.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSound                     : filename = fmod:///remote/Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav : mode 0201c082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004C2F4808 : node = 000000003BAB45B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EAEA8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C2F4808
+[LOG] SystemI::createSoundInternal             :     Create name='fmod:///remote/Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav', mode=0x0201C082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              :     Attemping to open remote file 'Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav'
+[LOG] SystemI::createSoundInternal             :     Stream: name='(null)', format=3, channels=2, frequency=48000, lengthbytes=13824000, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C2F4808
+[LOG] SoundI::release                          : theme_music.wav (000000003BA97F08)
+[LOG] SoundI::release                          :     (null) (000000004C0EABB8)
+[ERR] ProfileClient::recvThreadLoopFunction    : Recv thread loop returned 16
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] ProfileRemoteFile::clientStopRequestingDataAsync : Client disconnected, shutting down remote file 'Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav'
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] LiveUpdate::clientDisconnected           : client = 000000004C949908
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[WRN] ProfileRemoteFile::fileRead              : Remote file 'Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav' could not be read (ERR_CONNECTION)
+[LOG] SoundI::release                          : theme_music.wav (000000004C2F4808)
+[LOG] SoundI::release                          :     (null) (000000004C0EB8B8)
+[LOG] SystemI::createSound                     : filename = fmod:///remote/Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav : mode 0201c082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004C2F42F8 : node = 000000003BAB3F70
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EAEA8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C2F42F8
+[LOG] SystemI::createSoundInternal             :     Create name='fmod:///remote/Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav', mode=0x0201C082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              :     Attemping to open remote file 'Z:/Users/chunwinglee/Documents/Three thing games2018/Underbaked/underbaked/Assets/Doot/Assets/Environment/theme_music.wav'
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C2F42F8
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Waveform instance in error state 18
+[LOG] SoundI::release                          : (null) (000000004C2F42F8)
+[LOG] SoundI::release                          : ambience_loop (000000004C264488)
+[LOG] SoundI::release                          :     ambience_loop (000000004C0EC5B8)
+[LOG] SoundI::release                          :     ambience_loop (000000003BA97338)
+[LOG] SoundI::release                          : chatter_loop (000000004C2642D8)
+[LOG] SoundI::release                          :     chatter_loop (000000004C0EAA18)
+[LOG] SoundI::release                          :     chatter_loop (000000003BA97848)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -28,4 +443,6 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
