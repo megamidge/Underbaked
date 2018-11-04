@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000001B04A408 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000004C192D68 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -18,7 +18,76 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Profile::init                            : Profiler listening on port: 9264
-[ERR] RuntimeBankModel::openFile               : Failed to open file 'Assets\Doot\Build\Desktop/.strings.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Music.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000000003BA974E8 : node = 000000004BE914F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EBEE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BA974E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Music.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 774208
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1888
+[LOG] SystemI::createSound                     :     filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003BA97698 : node = 000000004BE90FB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004BE91608
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004C0EBEE8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003BA97848 : node = 000000004BE913A0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004C0EBEE8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='theme_music', format=2, channels=2, frequency=48000, lengthbytes=773440, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BA974E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BA97698
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004BE910C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='chatter_loop', format=2, channels=2, frequency=48000, lengthbytes=659808, lengthpcm=2484226, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.528172.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BA97698
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BA97848
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004BE914B8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_loop', format=2, channels=2, frequency=48000, lengthbytes=199200, lengthpcm=768265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.108278.
+[LOG] SoundI::getSubSound                      :     sound 000000003BA974E8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000003BA97698.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BA97848
+[LOG] SoundI::getSubSound                      : sound 000000003BA97848.  Subsound index 0 / 1
+[LOG] SoundI::release                          : ambience_loop (000000003BA97848)
+[LOG] SoundI::release                          :     ambience_loop (000000004C0EC278)
+[LOG] SoundI::release                          :     ambience_loop (000000003BA97BA8)
+[LOG] SoundI::release                          : chatter_loop (000000003BA97698)
+[LOG] SoundI::release                          :     chatter_loop (000000004C0EBA58)
+[LOG] SoundI::release                          :     chatter_loop (000000004C2F4B68)
+[LOG] SoundI::release                          : theme_music (000000003BA974E8)
+[LOG] SoundI::release                          :     theme_music (000000004C0EB8B8)
+[LOG] SoundI::release                          :     theme_music (000000003BA979F8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -28,4 +97,6 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
