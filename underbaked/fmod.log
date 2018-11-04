@@ -29,10 +29,16 @@
 [LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+<<<<<<< HEAD
 [LOG] SystemI::createSound                     : setdata soundi = 000000004C2F4808 : node = 000000004C38FB50
 [LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EAB68.  list count = 0
 [LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C2F4808
 [LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+=======
+[LOG] SystemI::createSound                     : setdata soundi = 000000004C2F3218 : node = 000000004C38F220
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004C0EBBA8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C2F3218
+>>>>>>> FoodSystem
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
@@ -41,6 +47,7 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
 [LOG] SystemI::createSound                     :     add node to async list : head = 000000004C0EAB68.  list count = 0
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+<<<<<<< HEAD
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C38FC68
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
@@ -49,16 +56,35 @@
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C2F4808
 [LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C264B48
+=======
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C38F338
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = Assets\Doot\Build\Desktop/Environment.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004C264CF8 : node = 000000004BE91250
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004C0EBBA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='chatter_loop', format=2, channels=2, frequency=48000, lengthbytes=659808, lengthpcm=2484226, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.528172.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C2F3218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C264CF8
+>>>>>>> FoodSystem
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Doot\Build\Desktop/Environment.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 859712
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2624
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+<<<<<<< HEAD
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C38F488
+=======
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004BE91368
+>>>>>>> FoodSystem
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_loop', format=2, channels=2, frequency=48000, lengthbytes=199200, lengthpcm=768265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.108278.
+<<<<<<< HEAD
 [LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C264B48
 [LOG] SoundI::getSubSound                      : sound 000000004C2F4808.  Subsound index 0 / 1
 [LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004C263F78
@@ -70,6 +96,17 @@
 [LOG] SoundI::release                          : chatter_loop (000000004C2F4808)
 [LOG] SoundI::release                          :     chatter_loop (000000004C0EBF38)
 [LOG] SoundI::release                          :     chatter_loop (000000004C263F78)
+=======
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004C264CF8
+[LOG] SoundI::getSubSound                      : sound 000000004C2F3218.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000004C264CF8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : ambience_loop (000000004C264CF8)
+[LOG] SoundI::release                          :     ambience_loop (000000004C0EAA18)
+[LOG] SoundI::release                          :     ambience_loop (000000004C2F4148)
+[LOG] SoundI::release                          : chatter_loop (000000004C2F3218)
+[LOG] SoundI::release                          :     chatter_loop (000000004C0EB098)
+[LOG] SoundI::release                          :     chatter_loop (000000004C264128)
+>>>>>>> FoodSystem
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

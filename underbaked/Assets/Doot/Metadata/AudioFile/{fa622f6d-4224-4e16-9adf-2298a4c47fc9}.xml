@@ -2,7 +2,11 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{fa622f6d-4224-4e16-9adf-2298a4c47fc9}">
         <property name="assetPath">
+<<<<<<< HEAD
             <value>Environment/theme_music.wav</value>
+=======
+            <value>theme_music.wav</value>
+>>>>>>> FoodSystem
         </property>
         <property name="isStreaming">
             <value>true</value>
