@@ -29,6 +29,7 @@ public class Spawner : MonoBehaviour {
             go.AddComponent<FallingBlock>();
             go.AddComponent<Rigidbody>();
             go.AddComponent<BoxCollider>();
+            go.tag = "Ingredient";
 
             go.GetComponent<Rigidbody>().mass = .1f;
             go.GetComponent<Rigidbody>().drag = 5f;

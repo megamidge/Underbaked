@@ -20,6 +20,8 @@ public class FallingBlock : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
         //Instantiate(splat, gameObject.transform.position, Quaternion.identity);
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
+        if (collision.gameObject.tag != "Player")
+            this.gameObject.SetActive(false);
     }
 }
