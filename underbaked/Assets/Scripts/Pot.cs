@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pot : MonoBehaviour {
 
-    public List<Ingredient> ingredients = new List<Ingredient>();
-
+    public List<IngredientObject> ingredients = new List<IngredientObject>();
+    public IngredientObject ingredient;
     public GameManager gm;
 
 	// Use this for initialization
@@ -24,8 +24,10 @@ public class Pot : MonoBehaviour {
         {
             gm.Points += 1;
             //ingredients.Add(other.gameObject.GetComponent<FallingBlock>().ingredient);
+            //ingredients.Add(other.gameObject.GetComponent<FallingBlock>().ingredient);
+            ingredient = other.gameObject.GetComponent<IngredientObject>();
             Destroy(other.gameObject);
-            Debug.Log(ingredients.Count + " " + ingredients[ingredients.Count - 1].ItemName);
+            //Debug.Log(ingredients.Count + " " + ingredients[ingredients.Count - 1]);
         }
     }
 }

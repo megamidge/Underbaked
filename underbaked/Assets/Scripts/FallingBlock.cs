@@ -6,7 +6,7 @@ public class FallingBlock : MonoBehaviour {
 
     float speed = 5;
     public GameObject splat;
-    public Ingredient ingredient;
+    public IngredientObject ingredient;
 
     private void Start()
     {
