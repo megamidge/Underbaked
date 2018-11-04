@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{222c2d84-5ef6-4787-b70b-b13a367f05ea}">
+        <property name="name">
+            <value>Oven_on</value>
+        </property>
+        <relationship name="folder">
+            <destination>{68e41abe-6499-4838-a80f-6438680dfd80}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{bef41f9c-fa16-4c22-9614-0bf7f7f93a44}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{bef41f9c-fa16-4c22-9614-0bf7f7f93a44}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
