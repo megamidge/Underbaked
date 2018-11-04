@@ -19,7 +19,7 @@ public class FallingBlock : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Instantiate(splat, gameObject.transform.position, Quaternion.identity);
+        //Instantiate(splat, gameObject.transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 }

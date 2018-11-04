@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75a3eb67b6781a4a810a44e21ff717a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 26f4d367477e8894e8391eb1ed9ed5e8, type: 2}
+  ingredient: {fileID: 0}
 --- !u!4 &364342901
 Transform:
   m_ObjectHideFlags: 0
@@ -839,6 +839,8 @@ MonoBehaviour:
   fallingBlockPrefab: {fileID: 1918353031098878, guid: a2f5fd9096ad70c4e9487f52e5a2b002,
     type: 2}
   secondsBetweenSpawns: 1
+  ingredients:
+  - {fileID: 11400000, guid: 5d0a5db70f853724db6af7d7c0e09f89, type: 2}
 --- !u!4 &500778637
 Transform:
   m_ObjectHideFlags: 0
@@ -1819,7 +1821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd9470adeb040e47a47f8509ff79873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: {fileID: 11400000, guid: 9e7f51117dc811e41b4becae11d22296, type: 2}
+  food: {fileID: 0}
 --- !u!4 &1523249893
 Transform:
   m_ObjectHideFlags: 0

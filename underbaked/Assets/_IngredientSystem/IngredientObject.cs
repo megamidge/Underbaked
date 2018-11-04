@@ -10,5 +10,6 @@ public class IngredientObject : MonoBehaviour {
 	void Start () {
         go = Instantiate(ingredient.obj);
         go.transform.SetParent(this.gameObject.transform);
+        go.transform.localPosition = Vector3.zero;
 	}
 }

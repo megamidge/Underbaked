@@ -8,7 +8,9 @@ public class Spawner : MonoBehaviour {
 
     public float secondsBetweenSpawns = 1f;
     float nextSpawnTime = 0f;
- 
+
+    public List<Ingredient> ingredients = new List<Ingredient>();
+
 	// Use this for initialization
 	void Start () {    
 	}
@@ -20,7 +22,15 @@ public class Spawner : MonoBehaviour {
             nextSpawnTime = Time.time + secondsBetweenSpawns;
 
             Vector3 spawnPosition = new Vector3(Random.Range(-4, 3), 10, Random.Range(-2.4f, 2.4f));
-            GameObject Falling = Instantiate(fallingBlockPrefab, spawnPosition, Quaternion.identity);
+
+            GameObject go = new GameObject();
+            go.AddComponent<IngredientObject>();
+            go.GetComponent<IngredientObject>().ingredient = ingredients[Random.Range(0, ingredients.Count - 1)];
+            go.AddComponent<FallingBlock>();
+            go.AddComponent<Rigidbody>();
+            go.AddComponent<BoxCollider>();
+
+            GameObject Falling = Instantiate(go, new Vector3(spawnPosition.x, 30f, spawnPosition.z), Quaternion.identity);
 
             //Falling.GetComponent<FallingBlock>().ingredient = new Ingredient("Flour", 100);
         }
